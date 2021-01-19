@@ -1,16 +1,16 @@
 # AutoTest
 #Hướng dẫn cài đặt 
-Bước 1 - Cài đặt eclipse để có thể thực hiện chạy project
+#Bước 1 - Cài đặt eclipse để có thể thực hiện chạy project
   link download eclipse :  https://www.eclipse.org/downloads/
-Bước 2 - Cài đặt Maven cho Eclipse để có thể import 1 Maven project 
-  Vào Eclipse > chọn option Help > chọn Install new software
-  Chọn Add > Sau đó nhập Name=" m2e" và Location= "http://download.eclipse.org/technology/m2e/releases" > Hoàn thành các bước cài đặt 
-Bước 3 - Cài đặt Cucumber cho Eclipse
-  Tương tự như cài đặt maven ta thực hiện cài đặt Cucumber cho Eclipse bằng cách thay thao tác nhập Name="Cucumber" 
-  và Location=" http://cucumber.github.com/cucumber-eclipse/update-site"
-Bước 4 - Thực hiện tạo 1 maven project 
-Bước 5 - Add thư viện Junit5 vào project
-Bước 6 - Thực hiện thêm các thư viện selenium, gherkin,... vào file pom.xml như sau:
+#Bước 2 - Cài đặt Maven cho Eclipse để có thể import 1 Maven project 
+ # Vào Eclipse > chọn option Help > chọn Install new software
+ # Chọn Add > Sau đó nhập Name=" m2e" và Location= "http://download.eclipse.org/technology/m2e/releases" > Hoàn thành các bước cài đặt 
+#Bước 3 - Cài đặt Cucumber cho Eclipse
+ # Tương tự như cài đặt maven ta thực hiện cài đặt Cucumber cho Eclipse bằng cách thay thao tác nhập Name="Cucumber" 
+ # và Location=" http://cucumber.github.com/cucumber-eclipse/update-site"
+#Bước 4 - Thực hiện tạo 1 maven project 
+#Bước 5 - Add thư viện Junit5 vào project
+#Bước 6 - Thực hiện thêm các thư viện selenium, gherkin,... vào file pom.xml như sau:
 ```<dependencies>
 		<dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -108,5 +108,5 @@ Bước 6 - Thực hiện thêm các thư viện selenium, gherkin,... vào file
 			<version>2.45.0</version>
 		</dependency>
 	</dependencies>```
-  Bước 7 - thực hiện tạo các file code tương ứng cho project 
-  Bước 8 - Chạy chương trình 
+ # Bước 7 - thực hiện tạo các file code tương ứng cho project 
+ # Bước 8 - Chạy chương trình 
