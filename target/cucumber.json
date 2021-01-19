@@ -1,0 +1,1437 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login success",
+        "description": "",
+        "id": "login;login-success",
+        "after": [
+          {
+            "result": {
+              "duration": 168800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7893304600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I access Admin page and login sucessfully",
+            "match": {
+              "location": "Login.i_access_Admin_page_and_login_sucessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49533000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see the Dashboard",
+            "match": {
+              "location": "Login.i_see_the_Dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Close popup survey by set cookie",
+        "description": "",
+        "id": "login;close-popup-survey-by-set-cookie",
+        "after": [
+          {
+            "result": {
+              "duration": 95700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4087810600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Close survey",
+            "match": {
+              "location": "Login.close_survey()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "I want to login success to test function",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AALoginSapo.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Login Facebook",
+        "description": "",
+        "id": "connect-pages-success;login-facebook",
+        "after": [
+          {
+            "result": {
+              "duration": 383600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10616636300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I close guideline login acount facebook",
+            "match": {
+              "location": "ConnectPage.i_close_guideline_login_acount_facebook()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8588119100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter a valid username and password facebook",
+            "match": {
+              "location": "ConnectPage.enter_a_valid_username_and_password_facebook()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3409810100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter login",
+            "match": {
+              "location": "ConnectPage.enter_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2121931100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I see successful login",
+            "match": {
+              "location": "ConnectPage.i_see_successful_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Connect a page",
+        "description": "",
+        "id": "connect-pages-success;connect-a-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1078500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 150144200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I login acount facebook sucessfully",
+            "match": {
+              "location": "ConnectPage.i_login_acount_facebook_sucessfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 700241800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I connect a page",
+            "match": {
+              "location": "ConnectPage.i_connect_a_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12370181600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I close popups noti",
+            "match": {
+              "location": "ConnectPage.i_close_popups_noti()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135317700,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.ConnectPage.i_see_list_conversation(ConnectPage.java:135)\r\n\tat ✽.Then I see list conversation(src/test/resources/Features/ABConnectPage.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I see list conversation",
+            "match": {
+              "location": "ConnectPage.i_see_list_conversation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Connect Pages success",
+    "description": "I want to connect pages success to test function",
+    "id": "connect-pages-success",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/ABConnectPage.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "receive messages from customers",
+        "description": "",
+        "id": "messenger-and-auto-reply-messenger;receive-messages-from-customers",
+        "after": [
+          {
+            "result": {
+              "duration": 1557500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4089069700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I use my personal account on facebook",
+            "match": {
+              "location": "MessengerAutoReply.i_use_my_personal_account_on_facebook()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8553767700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I send a message to the page",
+            "match": {
+              "location": "MessengerAutoReply.i_send_a_message_to_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6927321600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I open the message I just received in the software",
+            "match": {
+              "location": "MessengerAutoReply.i_open_the_message_I_just_received_in_the_software()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141360900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I check my messages",
+            "match": {
+              "location": "MessengerAutoReply.i_check_my_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "send messages to customers",
+        "description": "",
+        "id": "messenger-and-auto-reply-messenger;send-messages-to-customers",
+        "after": [
+          {
+            "result": {
+              "duration": 384947600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136407700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on that conversation",
+            "match": {
+              "location": "MessengerAutoReply.i_am_on_that_conversation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 895908100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter the message content for the client",
+            "match": {
+              "location": "MessengerAutoReply.i_enter_the_message_content_for_the_client()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 545091500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I choose to send a message",
+            "match": {
+              "location": "MessengerAutoReply.i_choose_to_send_a_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1760643600,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\r\n\tat java.base/java.util.Objects.checkIndex(Objects.java:359)\r\n\tat java.base/java.util.ArrayList.get(ArrayList.java:427)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.get(Unknown Source)\r\n\tat go.test.stepdefine.MessengerAutoReply.i_check_my_messages_on_facebook(MessengerAutoReply.java:91)\r\n\tat ✽.Then I check my messages on facebook(src/test/resources/Features/ACMessengerAndAutoReply.feature:17)\r\n",
+              "status": "failed"
+            },
+            "embeddings": [
+              {
+                "data": "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AAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIBIWAUAAAAAiIRVAAAAAIDofPQCAAAAAABHm+d5822aptXMxSoAAAAA8PfexdO9ubAKAAAAADDWEXUrqo4hrAIAAAAAvDxj6l5UHWOM0+V6W76xEAAAAADALzgt94//cLEKAAAAABAJqwAAAAAAkbAKAAAAABAJqwAAAAAAkbAKAAAAABAJqwAAAAAA0QM+yu4c2182BgAAAABJRU5ErkJggg\u003d\u003d",
+                "mime_type": "image/png"
+              }
+            ],
+            "line": 17,
+            "name": "I check my messages on facebook",
+            "match": {
+              "location": "MessengerAutoReply.i_check_my_messages_on_facebook()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "create automatic response scripts for messages",
+        "description": "",
+        "id": "messenger-and-auto-reply-messenger;create-automatic-response-scripts-for-messages",
+        "after": [
+          {
+            "result": {
+              "duration": 12204710700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7578448100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter the tool automatically function",
+            "match": {
+              "location": "MessengerAutoReply.i_enter_the_tool_automatically_function()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5030664800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I create an auto-response script for the message",
+            "match": {
+              "location": "MessengerAutoReply.i_create_an_auto_response_script_for_the_message()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2387956300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter the script name",
+            "match": {
+              "location": "MessengerAutoReply.i_enter_the_script_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2333545600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I choose the response time",
+            "match": {
+              "location": "MessengerAutoReply.i_choose_the_response_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2381700200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I choose the next step",
+            "match": {
+              "location": "MessengerAutoReply.i_choose_the_next_step()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13312541400,
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d87.0.4280.141)\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 12.20 seconds\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027AnhBTK-PC\u0027, ip: \u0027192.168.1.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56568}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir\u003dC:\\Users\\PV\\AppData\\Local\\Temp\\scoped_dir17572_1098969379}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d87.0.4280.141, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: e525297196170ed37f276c9a0841a61a\n*** Element info: {Using\u003dxpath, value\u003d//textarea[@placeholder\u003d\u0027Nhập nội dung tin nhắn phản hồi\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:563)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:556)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat go.test.actions.WebDriverAction.waitElementToSendKeys(WebDriverAction.java:324)\r\n\tat go.test.stepdefine.MessengerAutoReply.i_enter_the_text_to_respond_to_the_message(MessengerAutoReply.java:130)\r\n\tat ✽.And I enter the text to respond to the message(src/test/resources/Features/ACMessengerAndAutoReply.feature:24)\r\n",
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "I enter the text to respond to the message",
+            "match": {
+              "location": "MessengerAutoReply.i_enter_the_text_to_respond_to_the_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I choose a response time",
+            "match": {
+              "location": "MessengerAutoReply.i_choose_a_response_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I saved and scripted the script",
+            "match": {
+              "location": "MessengerAutoReply.i_saved_and_scripted_the_script()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I check my script",
+            "match": {
+              "location": "MessengerAutoReply.i_check_my_script()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "test applying automatic response scripts to messages",
+        "description": "",
+        "id": "messenger-and-auto-reply-messenger;test-applying-automatic-response-scripts-to-messages",
+        "after": [
+          {
+            "result": {
+              "duration": 12194080300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 256781000,
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d87.0.4280.141)\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 249 milliseconds\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027AnhBTK-PC\u0027, ip: \u0027192.168.1.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56568}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir\u003dC:\\Users\\PV\\AppData\\Local\\Temp\\scoped_dir17572_1098969379}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d87.0.4280.141, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: e525297196170ed37f276c9a0841a61a\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getWindowHandles(RemoteWebDriver.java:477)\r\n\tat go.test.actions.WebDriverAction.switchTabWindow(WebDriverAction.java:489)\r\n\tat go.test.stepdefine.MessengerAutoReply.i_use_my_personal_account_on_facebook_again(MessengerAutoReply.java:157)\r\n\tat ✽.Given I use my personal account on facebook again(src/test/resources/Features/ACMessengerAndAutoReply.feature:29)\r\n",
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "I use my personal account on facebook again",
+            "match": {
+              "location": "MessengerAutoReply.i_use_my_personal_account_on_facebook_again()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I send a new message to the page",
+            "match": {
+              "location": "MessengerAutoReply.i_send_a_new_message_to_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I open new coversation",
+            "match": {
+              "location": "MessengerAutoReply.i_open_new_coversation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I check the messages I receive",
+            "match": {
+              "location": "MessengerAutoReply.i_check_the_messages_I_receive()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I check the feedback messages for customers",
+            "match": {
+              "location": "MessengerAutoReply.i_check_the_feedback_messages_for_customers()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Messenger and Auto reply messenger",
+    "description": "I want to send a mesage for customer \r\nIf a Customer send a message Server send a auto message",
+    "id": "messenger-and-auto-reply-messenger",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/ACMessengerAndAutoReply.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "create a post on facebook",
+        "description": "",
+        "id": "comment-and-auto-reply-comment;create-a-post-on-facebook",
+        "after": [
+          {
+            "result": {
+              "duration": 428300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 742700,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.CommentAutoReply.i_open_the_homepage_of_the_facebook_page(CommentAutoReply.java:29)\r\n\tat ✽.When I open the homepage of the facebook page(src/test/resources/Features/ADCommentAutoReply.feature:9)\r\n",
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "I open the homepage of the facebook page",
+            "match": {
+              "location": "CommentAutoReply.i_open_the_homepage_of_the_facebook_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I create a post for the facebook page",
+            "match": {
+              "location": "CommentAutoReply.i_create_a_post_for_the_facebook_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I comment on that article on my personal facebook account",
+            "match": {
+              "location": "CommentAutoReply.i_comment_on_that_article_on_my_personal_facebook_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I check the comment at the software interface",
+            "match": {
+              "location": "CommentAutoReply.i_check_the_comment_at_the_software_interface()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "reply comment to customers",
+        "description": "",
+        "id": "comment-and-auto-reply-comment;reply-comment-to-customers",
+        "after": [
+          {
+            "result": {
+              "duration": 404700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3188300,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.CommentAutoReply.i_open_that_conversation(CommentAutoReply.java:53)\r\n\tat ✽.Given I open that conversation(src/test/resources/Features/ADCommentAutoReply.feature:15)\r\n",
+              "status": "pending"
+            },
+            "line": 15,
+            "name": "I open that conversation",
+            "match": {
+              "location": "CommentAutoReply.i_open_that_conversation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I enter the comment content for the client",
+            "match": {
+              "location": "CommentAutoReply.i_enter_the_comment_content_for_the_client()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I choose to send a comment",
+            "match": {
+              "location": "CommentAutoReply.i_choose_to_send_a_comment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I check my comment on facebook",
+            "match": {
+              "location": "CommentAutoReply.i_check_my_comment_on_facebook()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "create automatic response scripts for comments",
+        "description": "",
+        "id": "comment-and-auto-reply-comment;create-automatic-response-scripts-for-comments",
+        "after": [
+          {
+            "result": {
+              "duration": 245700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 359800,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.CommentAutoReply.i_enter_the_tool_automatically_function_for_comment(CommentAutoReply.java:77)\r\n\tat ✽.Given I enter the tool automatically function for comment(src/test/resources/Features/ADCommentAutoReply.feature:21)\r\n",
+              "status": "pending"
+            },
+            "line": 21,
+            "name": "I enter the tool automatically function for comment",
+            "match": {
+              "location": "CommentAutoReply.i_enter_the_tool_automatically_function_for_comment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I create an auto-response script for the comment",
+            "match": {
+              "location": "CommentAutoReply.i_create_an_auto_response_script_for_the_comment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I enter the script name for the response scenario",
+            "match": {
+              "location": "CommentAutoReply.i_enter_the_script_name_for_the_response_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I choose the response time for the response scenario",
+            "match": {
+              "location": "CommentAutoReply.i_choose_the_response_time_for_the_response_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I choose the next step for the response scenario",
+            "match": {
+              "location": "CommentAutoReply.i_choose_the_next_step_for_the_response_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I enter the text to respond to the comment",
+            "match": {
+              "location": "CommentAutoReply.i_enter_the_text_to_respond_to_the_comment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I choose a response time for the response scenario",
+            "match": {
+              "location": "CommentAutoReply.i_choose_a_response_time_for_the_response_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I saved and scripted the script for the response scenario",
+            "match": {
+              "location": "CommentAutoReply.i_saved_and_scripted_the_script_for_the_response_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I check my script on the list",
+            "match": {
+              "location": "CommentAutoReply.i_check_my_script_on_the_list()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "test applying automatic response scripts to comment",
+        "description": "",
+        "id": "comment-and-auto-reply-comment;test-applying-automatic-response-scripts-to-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 370600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 290900,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.CommentAutoReply.i_use_my_personal_account_on_facebook_to_comment_the_post(CommentAutoReply.java:131)\r\n\tat ✽.Given I use my personal account on facebook to comment the post(src/test/resources/Features/ADCommentAutoReply.feature:32)\r\n",
+              "status": "pending"
+            },
+            "line": 32,
+            "name": "I use my personal account on facebook to comment the post",
+            "match": {
+              "location": "CommentAutoReply.i_use_my_personal_account_on_facebook_to_comment_the_post()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I send a new comment",
+            "match": {
+              "location": "CommentAutoReply.i_send_a_new_comment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I open new coversation comment",
+            "match": {
+              "location": "CommentAutoReply.i_open_new_coversation_comment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I check the comment I receive",
+            "match": {
+              "location": "CommentAutoReply.i_check_the_comment_I_receive()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I check the feedback comment for customers",
+            "match": {
+              "location": "CommentAutoReply.i_check_the_feedback_comment_for_customers()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Comment and Auto reply comment",
+    "description": "I want to send a comment for customer \r\nIf a Customer send a comment Server send a auto comment",
+    "id": "comment-and-auto-reply-comment",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/ADCommentAutoReply.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "create orders for customers",
+        "description": "",
+        "id": "create-order-and-manipulate-orders;create-orders-for-customers",
+        "after": [
+          {
+            "result": {
+              "duration": 421200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 765600,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.Order.i_choose_to_create_an_order_function(Order.java:29)\r\n\tat ✽.When I choose to create an order function(src/test/resources/Features/AEOrders.feature:8)\r\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I choose to create an order function",
+            "match": {
+              "location": "Order.i_choose_to_create_an_order_function()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I choose the product to put in the order",
+            "match": {
+              "location": "Order.i_choose_the_product_to_put_in_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I choose to add another service to the order",
+            "match": {
+              "location": "Order.i_choose_to_add_another_service_to_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I add notes to the order",
+            "match": {
+              "location": "Order.i_add_notes_to_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I add payment confirmation",
+            "match": {
+              "location": "Order.i_add_payment_confirmation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I check to add the payment successfully",
+            "match": {
+              "location": "Order.i_check_to_add_the_payment_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I do create an order",
+            "match": {
+              "location": "Order.i_do_create_an_order()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "check your order after it has been created",
+        "description": "",
+        "id": "create-order-and-manipulate-orders;check-your-order-after-it-has-been-created",
+        "after": [
+          {
+            "result": {
+              "duration": 217900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 291700,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.Order.i_check_the_products_in_the_order(Order.java:71)\r\n\tat ✽.When I check the products in the order(src/test/resources/Features/AEOrders.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I check the products in the order",
+            "match": {
+              "location": "Order.i_check_the_products_in_the_order()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I check the total value of the order",
+            "match": {
+              "location": "Order.i_check_the_total_value_of_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I do the second payment confirmation",
+            "match": {
+              "location": "Order.i_do_the_second_payment_confirmation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I check the payment confirmation of the application",
+            "match": {
+              "location": "Order.i_check_the_payment_confirmation_of_the_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I choose packing and delivery for the order",
+            "match": {
+              "location": "Order.i_choose_packing_and_delivery_for_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I check the order in the system",
+            "match": {
+              "location": "Order.i_check_the_order_in_the_system()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create order and manipulate orders",
+    "description": "I want to create orders for customer",
+    "id": "create-order-and-manipulate-orders",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AEOrders.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: buithikimanhvtath5@gmail.com"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "create an auto order script",
+        "description": "",
+        "id": "create-an-auto-order-script-for-the-livestream-post;create-an-auto-order-script",
+        "after": [
+          {
+            "result": {
+              "duration": 1372600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 316400,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.AutoOrdersLivestream.i_enter_the_livestream_sales_function(AutoOrdersLivestream.java:30)\r\n\tat ✽.When I enter the livestream sales function(src/test/resources/Features/AFAutoOrderLivestream.feature:7)\r\n",
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "I enter the livestream sales function",
+            "match": {
+              "location": "AutoOrdersLivestream.i_enter_the_livestream_sales_function()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I choose to add a new script for the livestream post",
+            "match": {
+              "location": "AutoOrdersLivestream.i_choose_to_add_a_new_script_for_the_livestream_post()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I choose to add a keyword template for the product",
+            "match": {
+              "location": "AutoOrdersLivestream.i_choose_to_add_a_keyword_template_for_the_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I choose a product",
+            "match": {
+              "location": "AutoOrdersLivestream.i_choose_a_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I add a new product",
+            "match": {
+              "location": "AutoOrdersLivestream.i_add_a_new_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I save the content template just created",
+            "match": {
+              "location": "AutoOrdersLivestream.i_save_the_content_template_just_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I check the newly added product",
+            "match": {
+              "location": "AutoOrdersLivestream.i_check_the_newly_added_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I choose the order creation condition for the scenario",
+            "match": {
+              "location": "AutoOrdersLivestream.i_choose_the_order_creation_condition_for_the_scenario()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I choose to save the script",
+            "match": {
+              "location": "AutoOrdersLivestream.i_choose_to_save_the_script()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "delete the livestream script and delete the product",
+        "description": "",
+        "id": "create-an-auto-order-script-for-the-livestream-post;delete-the-livestream-script-and-delete-the-product",
+        "after": [
+          {
+            "result": {
+              "duration": 1051000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 320200,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat go.test.stepdefine.AutoOrdersLivestream.i_delete_the_script_just_created(AutoOrdersLivestream.java:84)\r\n\tat ✽.When I delete the script just created(src/test/resources/Features/AFAutoOrderLivestream.feature:18)\r\n",
+              "status": "pending"
+            },
+            "line": 18,
+            "name": "I delete the script just created",
+            "match": {
+              "location": "AutoOrdersLivestream.i_delete_the_script_just_created()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I open the site\u0027s product list",
+            "match": {
+              "location": "AutoOrdersLivestream.i_open_the_site_s_product_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I check the product I just created",
+            "match": {
+              "location": "AutoOrdersLivestream.i_check_the_product_I_just_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I confirm deletion of the product",
+            "match": {
+              "location": "AutoOrdersLivestream.i_confirm_deletion_of_the_product()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "create an auto order script for the livestream post",
+    "description": "",
+    "id": "create-an-auto-order-script-for-the-livestream-post",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AFAutoOrderLivestream.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  }
+]
