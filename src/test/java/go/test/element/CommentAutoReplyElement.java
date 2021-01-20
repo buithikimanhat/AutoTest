@@ -6,17 +6,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
-public class MessengerAutoReplyElement {
 
-// Gửi tin nhắn
-	@FindBy(xpath = "//iframe[contains(@src,'https://www.facebook.com/messages/t/113104476716795')]")
-	public static WebElement iframeMessage;
-//	@FindBy(xpath = "//div[@role='combobox']/div/div/div")
-	@FindBy(xpath = "//div[@contenteditable='true']")
-	public static WebElement inputMessage;
-	@FindBy(xpath = "//div[@aria-label='Nhấn Enter để gửi']")
-	public static WebElement submitMessage;
-//Kiểm tra tin nhắn về
+public class CommentAutoReplyElement {
+	// tạo post bên page
+	@FindBy(xpath = "//div[contains(@aria-label,'Tạo bài viết')]")
+	public static WebElement createPost;
+	@FindBy(xpath = "//div[@role='presentation']//div[contains(.,'Viết gì đó cho ANHBTK_test...') and @id]/parent::div/parent::div//div[@role='textbox']")
+	public static WebElement contentPost;
+	@FindBy(xpath = "//div[@role='button' and contains(.,'Đăng')]")
+	public static WebElement btnDang;
+	@FindBy(xpath = "//div[@aria-posinset='1']//a[contains(@aria-label,'phút')]")
+	public static WebElement linktextVuaxong;
+	@FindBy(xpath = "//div[@aria-posinset='1']//button[@aria-label='Nút chọn vai trò']")
+	public static WebElement switchUserFB;
+	@FindBy(xpath = "//div[@role='menuitemradio']//span[contains(.,'Bibong Rainbi')]")
+	public static WebElement optionUserFB;
+	@FindBy(xpath = "//div[@aria-label='Viết bình luận' and @role='button']")
+	public static WebElement clickCMT;
+	@FindBy(xpath = "//form//div[@aria-label='Viết bình luận']")
+	public static WebElement contentComment;
+	
+	//kiem tra tren phan mem
 	@FindBy(xpath = "//iframe[@class='app-iframe app-iframe--admin']")
 	public static WebElement iframeAdmin;
 	@FindBy(xpath = "//div[@class = 'd-flex conversation-item conversation-unread'][1]//span[@class='sender']")
@@ -28,47 +38,44 @@ public class MessengerAutoReplyElement {
 	@FindBy(xpath = "//div[@class = 'd-flex conversation-item conversation-active'][1]")
 	public static WebElement fisrtConversationChoosed;
 	@FindBy(xpath = "//div[@class='d-flex conversation-item conversation-active']//div[@class='conversation-content']/span/span")
-	public static WebElement contentMessenger;
-	@FindBy(xpath = "//span[@class='user-name']")
-	public static WebElement NameUser;
+	public static WebElement contentCmt;
 	@FindBy(xpath = "//textarea[@placeholder]")
 	public static WebElement inputChat;
 	@FindBy(xpath = "//div[@class='send-icon-wrapper']")
 	public static WebElement iconSend;
 	
-// kiểm tra tin nhắn đến khách hàng 
-//	@FindBy(xpath = "//div[@data-testid='incoming_group']//div[@dir='auto']")
-//	public static WebElement contentMessage;
-	@FindBys(@FindBy(xpath = "//div[@data-testid='incoming_group']//div[@dir='auto']"))			
-	public static List<WebElement> listOfElements_Message;
+	// kiem tra phan hoi cua page
+	@FindBy(xpath = "//span/span[contains(.,'1 phản hồi')]")
+	public static WebElement seeReplyPage;
+	@FindBy(xpath = "//div[@style='text-align: start;']")
+	public static WebElement contentCMTFB;
 	
-//Tạo kịch bản auto reply
+	// tao kich ban phan hoi tu dong cho binh luan
 	@FindBy(xpath = "//button[@class='btn btn-primary dropdown-toggle']")
 	public static WebElement btnAddScript;
-	@FindBy(xpath = "//a[@href='/facebook/autoreply-add-message']/li")
-	public static WebElement btnAddMessage;
-	@FindBy(xpath = "//input[@placeholder='Nhập tên kịch bản phản hồi tin nhắn tự động']")
-	public static WebElement NameScriptMessage;
-	@FindBy(xpath = "//label[@for='radio3']")
+	@FindBy(xpath = "//a[@href='/facebook/autoreply-add-cmt']/li")
+	public static WebElement btnAddCMT;
+	@FindBy(xpath = "//input[@placeholder='Nhập tên kịch bản phản hồi tự động']")
+	public static WebElement nameScriptComment;
+	@FindBy(xpath = "//div[@class='form-group']/div[@class='checkbox'][2]/label")
 	public static WebElement optionTime;
 	@FindBy(xpath = "//div[@class='setting-nextAuto']/div")
-	public static WebElement btnNextStep;
-	@FindBy(xpath = "//textarea[@placeholder='Nhập nội dung tin nhắn phản hồi']")
-	public static WebElement inputContentTN;
+	public static WebElement btnNextStepCMT;
+	@FindBy(xpath = "//textarea[@placeholder='Nhập nội dung bình luận phản hồi']")
+	public static WebElement inputContentCMT;
 	@FindBy(xpath = "//div[@class='radio-delay-time']/input[@id='radio-time-1']")
 	public static WebElement RadioDelayTime;
 	@FindBy(xpath = "//div[@class='modal-footer']/button[2]")
 	public static WebElement acceptDelayTime;
-	@FindBy(xpath = "//button[@type='button'][2]")
+	@FindBy(xpath = "//button[@class='btn btn-primary'][2]")
 	public static WebElement btnSubmitScript;
-// kiem tra kich ban sau khi luu
+	
+	//kiem tra sau khi tao kich ban
 	@FindBy(xpath = "//tr//div[@class='div_name_set']/span")
-	public static WebElement nameScriptMessageAfter;
-	@FindBy(xpath = "//tr//div[@class='on-time']")
-	public static WebElement timeReplyAutoMessage;
+	public static WebElement nameScriptCMTAfter;
 	@FindBy(xpath = "//tr//div[@data-for='actived0']/button")
 	public static WebElement activeScript;
-// xoa kich ban auto reply cho tin nhan
+	// xoa kich ban auto reply cho binh luan
 	@FindBy(xpath = "//div[@class = 'checkboxabc' ]//label[@title='Chọn']")
 	public static WebElement clickCheckbox;
 	@FindBy(xpath = "//button[@id='dropdownMenu1']")
@@ -77,4 +84,5 @@ public class MessengerAutoReplyElement {
 	public static WebElement selectOptionDelete;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	public static WebElement acceptDelete;
+
 }

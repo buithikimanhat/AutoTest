@@ -17,16 +17,12 @@ import cucumber.api.java.en.When;
 import go.test.actions.Base;
 import go.test.actions.Const;
 import go.test.element.ConnectPageElement;
-import go.test.element.FBChannelPage;
-import go.test.element.FBPage;
 import go.test.element.GlobalPage;
 import go.test.element.LoginPage;
 
 public class ConnectPage extends Base{
 	public ConnectPage(){
 		PageFactory.initElements(driver, GlobalPage.class);
-		PageFactory.initElements(driver, FBPage.class);
-		PageFactory.initElements(driver, FBChannelPage.class);
 		PageFactory.initElements(driver, ConnectPageElement.class);
 	}
 	@When("^I close guideline login acount facebook$")
@@ -130,9 +126,7 @@ public class ConnectPage extends Base{
 	@Then("^I see list conversation$")
 	public void i_see_list_conversation() throws Throwable {
 		assertText(ConnectPageElement.titleUI, "Hội thoại");
-//		closeTabWindow(1);
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		closeMultilTab();
 	}
 
 

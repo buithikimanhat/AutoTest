@@ -20,8 +20,8 @@ import go.test.actions.Base;
 						"src/test/resources/Features/ABConnectPage.feature",
 						"src/test/resources/Features/ACMessengerAndAutoReply.feature",
 						"src/test/resources/Features/ADCommentAutoReply.feature",
-						"src/test/resources/Features/AEOrders.feature",
-						"src/test/resources/Features/AFAutoOrderLivestream.feature"
+						"src/test/resources/Features/AFOrders.feature",
+						"src/test/resources/Features/AEAutoOrderLivestream.feature"
 						},
 					format = {"pretty", "json:target/cucumber.json"},
 					glue = "go.test.stepdefine"

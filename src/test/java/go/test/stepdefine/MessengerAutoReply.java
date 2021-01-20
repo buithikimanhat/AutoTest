@@ -18,8 +18,6 @@ import cucumber.api.java.en.When;
 import go.test.actions.Base;
 import go.test.actions.Const;
 import go.test.element.ConnectPageElement;
-import go.test.element.FBChannelPage;
-import go.test.element.FBPage;
 import go.test.element.GlobalPage;
 import go.test.element.LoginPage;
 import go.test.element.MessengerAutoReplyElement;
@@ -27,20 +25,18 @@ import go.test.element.MessengerAutoReplyElement;
 public class MessengerAutoReply extends Base{
 	public MessengerAutoReply(){
 		PageFactory.initElements(driver, GlobalPage.class);
-		PageFactory.initElements(driver, FBPage.class);
-		PageFactory.initElements(driver, FBChannelPage.class);
 		PageFactory.initElements(driver, MessengerAutoReplyElement.class);
 	}
 	String manualmessage ="Tin nhắn daily thủ công từ khách " + java.time.LocalDateTime.now() ;
 	String nameCustomer ="Bibong Rainbi";
 	String contentMessagePage ="Tin nhắn daily thủ công từ page "+ java.time.LocalDateTime.now() ;
-	String autoMessage = "Xin chào bạn, nội dung phản hồi cmt auto cho tất cả bài đăng" + java.time.LocalDate.now();
-	String autoCmt = "Xin chào bạn, nội dung bình luận phản hồi auto cho tất cả bài đăng " + java.time.LocalDate.now();
-	String nameScriptMessage = "Kịch bản phản hồi cmt auto " + java.time.LocalDate.now();
+	String autoMessage = "Xin chào bạn, nội dung phản hồi tin nhắn cho khách hàng nhắn tin đến " + java.time.LocalDate.now();
+	String nameScriptMessage = "Kịch bản phản hồi tin nhắn auto " + java.time.LocalDate.now();
 	String autoMessageKH="Tin nhắn từ khách hàng áp dụng phản hồi tự động "+java.time.LocalDateTime.now();
 	
 	@When("^I use my personal account on facebook$")
 	public void i_use_my_personal_account_on_facebook() throws Throwable {
+		openNewTabWindow("https://anhbtk-gotest6.mysapo.vn/admin/apps/socials-channel");
 		openNewTabWindow("https://www.facebook.com/messages/t/105446704660596");
 	}
 
@@ -88,19 +84,19 @@ public class MessengerAutoReply extends Base{
 	public void i_check_my_messages_on_facebook() throws Throwable {
 	    switchTabWindow(2);
 	    refresh();
-	    assertText(MessengerAutoReplyElement.listOfElements_Message.get(MessengerAutoReplyElement.listOfElements_Message.size()-1), contentMessagePage);
+//	    assertText(MessengerAutoReplyElement.listOfElements_Message.get(MessengerAutoReplyElement.listOfElements_Message.size()-1), contentMessagePage);
 	}
 
 	@Given("^I enter the tool automatically function$")
 	public void i_enter_the_tool_automatically_function() throws Throwable {
 	 openNewTabWindow(Const.URL + "/admin/apps/socials-channel/facebook/autoreply");	
-		switchToIframe(FBChannelPage.iframeAdmin);
+		switchToIframe(MessengerAutoReplyElement.iframeAdmin);
 		Thread.sleep(2000);							
 	}
 
 	@When("^I create an auto-response script for the message$")
 	public void i_create_an_auto_response_script_for_the_message() throws Throwable {
-		//them kich ban auto reply binh luan
+		//them kich ban auto reply tin nhan
 		waitElementToClick(MessengerAutoReplyElement.btnAddScript);
 		Thread.sleep(2000);
 		waitElementToClick(MessengerAutoReplyElement.btnAddMessage);
@@ -146,7 +142,7 @@ public class MessengerAutoReply extends Base{
 
 	@Then("^I check my script$")
 	public void i_check_my_script() throws Throwable {
-		assertText(MessengerAutoReplyElement.NameScriptMessageAfter,nameScriptMessage );
+		assertText(MessengerAutoReplyElement.nameScriptMessageAfter,nameScriptMessage );
 		assertText(MessengerAutoReplyElement.timeReplyAutoMessage, "Khi làm việc");
 		assertValueOfAttribute(MessengerAutoReplyElement.activeScript, "class", "btn btn-toggle active");
 		
@@ -169,19 +165,25 @@ public class MessengerAutoReply extends Base{
 	public void i_open_new_coversation() throws Throwable {
 	    switchTabWindow(1);
 	    refresh();
-	    assertText(MessengerAutoReplyElement.nameConversation, nameCustomer);	
-		click(MessengerAutoReplyElement.fisrtConversation);
+	    switchToIframe(MessengerAutoReplyElement.iframeAdmin); 
 	}
 
 	@When("^I check the messages I receive$")
 	public void i_check_the_messages_I_receive() throws Throwable {
-		assertText(MessengerAutoReplyElement.contentMessenger, autoMessageKH);
+		assertText(MessengerAutoReplyElement.nameConversationChoosed, nameCustomer);	
+		click(MessengerAutoReplyElement.fisrtConversationChoosed);	
 	}
 
 	@Then("^I check the feedback messages for customers$")
 	public void i_check_the_feedback_messages_for_customers() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		assertText(MessengerAutoReplyElement.contentMessenger, " ANHBTK_test: "+ autoMessage);
+		switchTabWindow(3);
+		switchToIframe(MessengerAutoReplyElement.iframeAdmin);
+		waitElementToClick(MessengerAutoReplyElement.clickCheckbox);
+		waitElementToClick(MessengerAutoReplyElement.selectOption);
+		waitElementToClick(MessengerAutoReplyElement.selectOptionDelete);
+		waitElementToClick(MessengerAutoReplyElement.acceptDelete);
+		Thread.sleep(3000);
 	}
 
 
